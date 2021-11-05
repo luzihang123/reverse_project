@@ -18,6 +18,12 @@ def md5_test2():
     print(md5.hexdigest())
 
 
+def md5_test3():
+    res = hashlib.md5('I love python!'.encode('utf-8')).hexdigest()
+    print(res)
+
+
 if __name__ == '__main__':
     md5_test1()  # 21169ee3acd4a24e1fcb4322cfd9a2b8
     md5_test2()  # 21169ee3acd4a24e1fcb4322cfd9a2b8
+    md5_test3()
